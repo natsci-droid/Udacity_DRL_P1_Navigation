@@ -2,7 +2,7 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
-# Udacity Deep Reinforcement Laerning Project 1: Navigation
+# Udacity Deep Reinforcement Learning Project 1: Navigation
 
 ### Introduction
 
@@ -40,4 +40,4 @@ Follow the instructions in `Navigation.ipynb` to get started with training the a
 
 The neural network that is used by the agent is defined in model.py and the agent pollicy is determined in dqn_agent.py.
 
-For more information on the Deep Q-Network, read the paper here: [click here] (https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+For more information on the Deep Q-Network, read the paper here: [click here](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
