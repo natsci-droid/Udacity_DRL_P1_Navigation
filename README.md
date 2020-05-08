@@ -40,4 +40,4 @@ Follow the instructions in `Navigation.ipynb` to get started with training the a
 
 The neural network that is used by the agent is defined in model.py and the agent pollicy is determined in dqn_agent.py.
 
-For more information on the Deep Q-Network, read the paper here: [click here](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+For more information on the Deep Q-Network, read the paper [here](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
