@@ -36,7 +36,7 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 ### Dependencies
 
-This code requires pytorch, which is available through anaconda and pip.
+This code requires python3 and pytorch, which are available through anaconda and pip.
 
 ### Instructions
 
