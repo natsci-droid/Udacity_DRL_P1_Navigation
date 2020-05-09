@@ -32,7 +32,11 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the directory with the code, and unzip (or decompress) the file. 
+2. Place the file in the directory with the code, and unzip (or decompress) the file.
+
+### Dependencies
+
+This code requires pytorch, which is available through anaconda and pip.
 
 ### Instructions
 
@@ -40,4 +44,4 @@ Follow the instructions in `Navigation.ipynb` to get started with training the a
 
 The neural network that is used by the agent is defined in model.py and the agent pollicy is determined in dqn_agent.py.
 
-For more information on the Deep Q-Network, read the paper [here](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+For more information on the Deep Q-Network, read the paper [here](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf).
