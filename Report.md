@@ -6,7 +6,7 @@
 
 ### Introduction
 
-This report describes the implementation of the Deep Q-Network to solve the banana environment. The first method implemented uses the double DQN implementation. The original development of the DQN algorithm is decribed in: [click here] (https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+This report describes the implementation of the Deep Q-Network to solve the banana environment. The first method implemented uses the double DQN implementation. The original development of the DQN algorithm is decribed [here](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf).
 
 ### Deep Q-Network
 
@@ -30,7 +30,7 @@ The neural network used is defined in model.py and consists of three fully conne
 
 Prioritised Experience Replay is a modification to the DQN network to improve the training process. Instead of randomly sampling from the replay buffer, experiences are selected that provide greater training value. These are identified from the TD error (delta), which is calculated during learning. A small offset, e_const=0.1 is added to delta to form the priority, ensuring that experience tuples are not completely starved for selection.
 
-The selection probabilites are determined by raising the priorities to the power alpha and dividing by the sum. This permits some random sampling. When alpha is set to 1, the priorities are used and when it is set to 0, experiences are selected randomly. In this example, alpha is set to 0.2. The weight update hyperparameter (SAMPLING) is set to increase from 0.1 to one at a rate of 1.005. 
+The selection probabilites are determined by raising the priorities to the power alpha and dividing by the sum. This permits some random sampling. When alpha is set to 1, the priorities are used and when it is set to 0, experiences are selected randomly. In this example, alpha is set to 0.2. The weight update hyperparameter (sampling) is set to increase from 0.1 to one at a rate of 1.005. 
 
 An example plot for rewards per episode is shown below. In this run the agent solved the environment in 714 episodes.
 
@@ -39,8 +39,8 @@ An example plot for rewards per episode is shown below. In this run the agent so
 Despite being an improvement, Prioritised Experience Replay slows the training considerably due to the extra calculations required. It also took more episodes to reach the solution, so is not an advantage for this environment.
 
 For the original hyperparameters, training converged before solving the environment. Thus the hyperparametrs were changed to:
-LR = 2.5e-4             # learning rate 
-UPDATE_EVERY = 8        # how often to update the network
+* LR = 2.5e-4             (learning rate) 
+* UPDATE_EVERY = 8        (how often to update the network)
 
 With these altered hyperparameters and no Prioritised Experience Replay, the solution is solved in 711 epochs. Thus for this environment tuning the hyperparameters has more effect on performance that the method.
 
